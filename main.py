@@ -30,12 +30,19 @@ from E_Reader import EReader
 from sdcard_transfer import mount_SDCard
 
 if __name__ == '__main__':
-    # Define Objects
-    sd_objects = mount_SDCard()
-    
-    app = EReader()
-    
-    app.run()
+    while True:
+        try:
+            # Define Objects
+            sd_objects = mount_SDCard()
+            
+            app = EReader()
+            
+            app.run()
+        except Exception as e:
+            print("FATAL ERROR:" + e)
+            time.sleep(1)
+            machine.reset()
+        
 
 
 
