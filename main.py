@@ -18,9 +18,9 @@ Wiring assumed:
         MISO = 12
     
     Button Inputs:
-        Up     = 2
-        Down   = 3
-        Select = 4
+        Up     = 3
+        Down   = 4
+        Select = 2
         
 """
 
